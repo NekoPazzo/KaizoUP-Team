@@ -1,0 +1,129 @@
+/* Base styles remain the same */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url('immagini/bbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .background-section {
+    background-image: url('immagini/bbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .background-sectionn {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  header {
+    padding: 20px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow header items to wrap */
+  }
+  header img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .requirements, .links, .instructions {
+    margin-bottom: 20px;
+  }
+  .requirements, .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .requirements ul, .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .requirements li, .links li {
+    margin: 5px 0;
+  }
+  .instructions {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-left: 4px solid #007BFF;
+  }
+  button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #0056b3;
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Reduce gap between nav links */
+    }
+  
+    .container {
+        margin: 10px; /* Reduce margin on smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+  
+    h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    button {
+        width: 100%; /* Make buttons full-width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+        font-size: 18px; /* Further reduce font size for very small screens */
+    }
+    
+    button {
+        padding: 10px; /* Adjust padding for buttons */
+    }
+  }
