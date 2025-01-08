@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="immagini/logomini.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style></style>
+  <link rel="stylesheet" href="Qstyle.css">
+</head>
+<body>
+  <header class="background-sectionn">
+    <img class="logo" style="margin-left: 43%;" src="immagini/logo.png" alt="KaizoUP Team Logo">
+    <nav>
+      <a href="news.html">Home</a>
+      <a href="home.html">Info</a>
+      <a href="download.html">Download</a>
+      <a href="FAQ.html">FAQ</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="immagini/1.jpg" style="width:100%">
+        <div class="text">THE DEMO IS NOW AVIABLE!</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="immagini/2.png" style="width:100%">
+        <div class="text">GO AND CHECK THE NEW TRAILER ON OUR YT CHANNEL!</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="immagini/3.jpg" style="width:100%">
+        <div class="text">GO AND CHECK THE DEMO GAMPLAY ON <a style="color: red;" href="https://www.youtube.com/watch?v=asylx9oOnw4">DGR_Dave</a></div>
+      </div>
+      <div style="text-align:center">
+        <span style="display: none;" class="dot"></span> 
+        <span style="display: none;" class="dot"></span> 
+        <span style="display: none;" class="dot"></span> 
+      </div>
+      </div>
+      <br>
+  </div>
+  <div id="disqus_thread"></div>
+  <p style="color: gainsboro; text-align: center;">Copyright (C) 2024/25 KaizoUP Team</p>
+  <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://team-kaizoup.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+// DON'T EDIT UP THIS LINE
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <script id="dsq-count-scr" src="//team-kaizoup.disqus.com/count.js" async></script>
+</body>
+</html>
