@@ -1,0 +1,193 @@
+/* Base styles remain the same */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url('immagini/bbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .background-section {
+    background-image: url('immagini/bbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .background-sectionn {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  header {
+    padding: 20px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow header items to wrap */
+  }
+  header img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .requirements, .links, .instructions {
+    margin-bottom: 20px;
+  }
+  .requirements, .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .requirements ul, .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .requirements li, .links li {
+    margin: 5px 0;
+  }
+  .instructions {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-left: 4px solid #007BFF;
+  }
+  button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #0056b3;
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Reduce gap between nav links */
+    }
+  
+    .container {
+        margin: 10px; /* Reduce margin on smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+  
+    h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    button {
+        width: 100%; /* Make buttons full-width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+        font-size: 18px; /* Further reduce font size for very small screens */
+    }
+    
+    button {
+        padding: 10px; /* Adjust padding for buttons */
+    }
+  }
